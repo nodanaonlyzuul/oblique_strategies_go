@@ -123,7 +123,10 @@ func main() {
 		"You don't have to be ashamed of using your own ideas",
 	}
 
-	rand.Seed(time.Now().Unix())
+	// Relying on time alone will cause the same card to be picked. If run at
+	// the same time.
+	seed := time.Now().Unix() - int64(rand.Intn(len(cards)))
+	rand.Seed(seed)
 	cardIndex := rand.Intn(len(cards))
 
 	fmt.Println(cards[cardIndex])
