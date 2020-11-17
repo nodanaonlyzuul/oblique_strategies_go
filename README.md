@@ -5,15 +5,14 @@ It's a work in progress, no judgey.
 
 ## Installing
 
-TODO: Add install instructions here
-
-## Running From Command Line
-
-TODO: Add instructions here
+1.  Pull this repository.
+2.  `go build ./oblique_stratagies.go` (creates the executable `oblique_stratagies`)
+3.  Put the executable somewhere in your `$PATH` or run it via absolute path.
 
 ## Use in Code
 
-TODO: Add instructions here
+I'd like to make this a library, not just an executable. So other programs can use cards,
+and even add the ability to bring your own deck. That's in the works.
 
 ## Contributing
 
